@@ -1,3 +1,65 @@
+:root {
+  --vermelho: #E50914;
+  --preta: #141414;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*elementos base*/
+
 body {
-  background-color: aqua;
+  background: var(--preta);
+  font-family: 'Times New Roman', Times, serif;
+  color: #ffffff;
+}
+
+header .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo {
+  margin-left: 0.3rem;
+  color: var(--vermelho);
+  font-family: 'Arial Black', Times;
+  font-size: 2.5rem;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #aaa;
+  margin-right: 0.8rem;
+}
+
+header nav a:hover{
+  color: #fff 
+}
+
+/*filme principal*/
+
+.filme-principal {
+  font-size: 1rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.40),rgba(0,0,0,.45)100%), url("../img/capa_halo.jpg");
+
+  height: 25rem;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.filme-principal .descricao {
+  margin-bottom: 2.5rem;
+}
+
+.titulo {
+  font-size: 2.3rem;
 }
